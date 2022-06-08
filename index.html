@@ -4,59 +4,68 @@
   <head>
     <!-- Informacje serwisowe -->
     <title>Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
   
 <body>
-    <header>
+    <header class="header">
+        <div class="container">
         <!-- The logo -->
         <a class="logo" href="index.html"><span class="logo-web">Web</span><span>Studio</span></a>
         <!--navigation-->
-        <nav>
-            <ul class="social-links">
-            <li><a class="link" href="">Agencja</a></li>
-            <li><a class="link" href="portfolio.html">Portfolio</a></li>
-            <li><a class="link" href="">Kontakt</a></li>
+        <nav class="navigation">
+            <ul class="social-links navigation-list">
+            <li class="navigation-list-item"><a class="link" href="">Agencja</a></li>
+            <li class="navigation-list-item"><a class="link" href="portfolio.html">Portfolio</a></li>
+            <li class="navigation-list-item"><a class="link" href="">Kontakt</a></li>
         </ul>
     </nav>
         <!--contact-->
-        <ul class="social-links-contact">
-            <li><a class="link-contact" href="info@devstudio.com">info@devstudio.com</a></li>
+        <ul class="social-links-contact navigation-list">
+            <li class="mail"><a class="link-contact" href="info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="link-contact" href="+48111111111">+48 111 111 111</a></li>
             </ul>
+        </div>
     </header>
 
     <main>
     <section class="heading">
-        <h1 class="title">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU </h1>
+        <div class="container">
+        <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
         <button type="button" class="button"><span class="button-text">Zamów usługę</span></button>
+        </div>
     </section>
-    <section>
-               <ul>
-                    <li><h4 class="lorem-title">LOREM IPSUM</h4>
+    <section class="container">
+               <ul class="lorem-layout">
+                    <li class="lorem-position"><h4 class="lorem-title">LOREM IPSUM</h4>
                         <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p></li>
-                    <li><h4 class="lorem-title">LOREM IPSUM</h4>
+                    <li class="lorem-position"><h4 class="lorem-title">LOREM IPSUM</h4>
                         <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p></li>
-                    <li><h4 class="lorem-title">LOREM IPSUM</h4>
+                    <li class="lorem-position"><h4 class="lorem-title">LOREM IPSUM</h4>
                         <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p></li>
-                    <li><h4 class="lorem-title">LOREM IPSUM</h4>
+                    <li class="lorem-position"><h4 class="lorem-title">LOREM IPSUM</h4>
                         <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p></li>  
                 </ul>
     </section>
        
     <section>
-            <h2 class="h2">Czym się zajmujemy</h2>
-            <ul>
-            <li> <img src="images/img1.jpg" alt="work on a new program" width="370" height="294"></li>
-            <li> <img src="images/img2.jpg" alt="mobile aplication" width="370" height="294"></li>
-            <li> <img src="images/img3.jpg" alt="application layout" width="370" height="294"></li>
+    <div class="container">
+            <h2 class="h2 ">Czym się zajmujemy</h2>
+            <ul class="img-layout-studio">
+            <li class="img-studio-segregate"> <img src="images/img1.jpg" alt="work on a new program" width="370" height="294"></li>
+            <li class="img-studio-segregate"> <img src="images/img2.jpg" alt="mobile aplication" width="370" height="294"></li>
+            <li class="img-studio-segregate"> <img src="images/img3.jpg" alt="application layout" width="370" height="294"></li>
             </ul>
+        </div>
     </section>
     <section>
-       <h2 class="h2 person" person >Nasz zespół</h2>
-        <ul class="person">
-       <li>
+        <div class="container">
+       <h2 class="h2">Nasz zespół</h2>
+        <ul class="person" >
+       <li class="person-list">
            <figure>
                <img src="images/person1.jpg" alt="John Doe - Product Designer" width="270" height="260">
                 <figcaption>
@@ -65,7 +74,7 @@
                 </figcaption>
         </figure>
     </li>
-       <li> 
+       <li class="person-list"> 
         <figure>
             <img src="images/person2.jpg" alt="John Doe - Frontend Developer" width="270" height="260">
             <figcaption>
@@ -74,7 +83,7 @@
             </figcaption>
             </figure>
     </li>
-       <li> 
+       <li class="person-list"> 
         <figure>
             <img src="images/person3.jpg" alt="John Doe - Marketing" width="270" height="260">
             <figcaption>
@@ -83,7 +92,7 @@
             </figcaption>
         </figure>
         </li>
-        <li> 
+        <li class="person-list"> 
            <figure>
                <img src="images/person4.jpg" alt="John Doe - UI Designer" width="270" height="260">
                 <figcaption>
@@ -93,10 +102,12 @@
         </figure>
         </li>
     </ul>
+    </div>
     </section>
     </main>
 
     <footer class="footer">
+        <div class="container">
     <!-- logo -->
     <a class="logo" href="index.html"><span class="logo-web">Web</span><span class="footer-logo">Studio</span></a>
     <!--adress-->
@@ -105,6 +116,7 @@
         <li><a class="footer-link" href="info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="footer-link" href="+48111111111">+48 111 111 111</a></li>
     </ul>
+    </div>
     </footer>
 </body>
 </html>

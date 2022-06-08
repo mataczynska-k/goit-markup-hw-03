@@ -4,41 +4,46 @@
 <head>
 <!-- Informacje serwisowe -->
 <title>Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header>
+<header class="header">
+    <div class="container">
     <!-- The logo -->
     <a class="logo" href="index.html"><span class="logo-web">Web</span><span>Studio</span></a>
     <!--navigation-->
-    <nav>
-        <ul class="social-links">
-        <li><a class="link" href="">Agencja</a></li>
-        <li><a class="link" href="portfolio.html">Portfolio</a></li>
-        <li><a class="link" href="">Kontakt</a></li>
+    <nav class="navigation">
+        <ul class="social-links navigation-list">
+        <li class="navigation-list-item"><a class="link" href="">Agencja</a></li>
+        <li class="navigation-list-item"><a class="link" href="portfolio.html">Portfolio</a></li>
+        <li class="navigation-list-item"><a class="link" href="">Kontakt</a></li>
     </ul>
 </nav>
     <!--contact-->
-    <ul class="social-links-contact">
-        <li><a class="link-contact" href="info@devstudio.com">info@devstudio.com</a></li>
+    <ul class="social-links-contact navigation-list navigation-list-item">
+        <li class="mail"><a class="link-contact" href="info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="link-contact" href="+48111111111">+48 111 111 111</a></li>
         </ul>
+    </div>
 </header>
 
 <main>
     <section>
-    <ul>
+        <div class="container">
+    <ul class="menu-button-ul">
         <li><button type="button" class="menu-button"> Wszystkie </button> </li>
         <li><button type="button" class="menu-button"> Strony </button></li>
         <li><button type="button" class="menu-button"> Aplikacje </button></li>
         <li><button type="button" class="menu-button"> Dizajn </button></li>
         <li><button type="button" class="menu-button"> Marketing </button></li>
     </ul>
+</div>
     </section>
 <section>
-<ul>
+<ul class="img-layout-portfolio">
     <li>
         <figure>
         <img class="img-portfolio" src="images/portfolio(1).jpg" alt="Technocrack" width="370" height="294">
