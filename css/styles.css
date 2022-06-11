@@ -250,7 +250,7 @@ padding: 195px;
 .heading {
 background-color: var(--heading-background);
 min-height: 600px;
-display: flex;
+/*display: flex;*/
 }
 
 .header .container {
@@ -260,7 +260,10 @@ display: flex;
 .header .mail {
 margin-right: 50px;
 }
-
+.button-class {
+  display: flex;
+  flex-direction: column;
+}
 .portfolio-header {
 background: var(--bright-color);
 border-bottom: 1px solid #ECECEC;
@@ -370,9 +373,9 @@ border: none;
 cursor: pointer; 
 width: 200px;
 height: 50px;
-display: flex;
 border-radius: 4px;
 margin-top: 30px;
+display:flex;
 margin-bottom: 200px;
 justify-content: center;
 align-items: center;
@@ -403,8 +406,9 @@ font-family: "Raleway", sans-serif;
 font-size: 26px;
 Line-height: 30.52px;
 margin-right: 93px;
-margin-bottom: 20px;
 }
+
+.adres { padding-top: 20px;}
 
 .footer-text {
 font-size: 14px;
@@ -416,11 +420,13 @@ text-decoration: none;
 
 .footer-link { color: var(--fotter-link-color);
   text-decoration: none;
+  
 }
 
 .footer-links .link:hover,
 .footer-links .link:focus {
 color: var(--brand-color);
+
 }
 
 
