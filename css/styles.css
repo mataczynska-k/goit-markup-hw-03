@@ -42,7 +42,7 @@ section {
 
 .container {
   width: 1200px;
-  padding: 0 15px;
+  padding: 0 ;
   align-items: center;
   margin: 0 auto;
 }
@@ -144,7 +144,7 @@ a {
 
 .img-layout-studio {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .img-studio-segregate {
@@ -164,7 +164,7 @@ a {
   display: flex;
   margin-top: 94px;
   margin-bottom: 94px;
-  justify-content: center;
+  justify-content: space-between;
   text-align: left;
 }
 
@@ -249,8 +249,7 @@ padding: 195px;
 
 .heading {
 background-color: var(--heading-background);
-min-height: 600px;
-/*display: flex;*/
+height: 600px;
 }
 
 .header .container {
@@ -284,7 +283,7 @@ align-items: center;
 .person {
 list-style: none;
 display: inline-flex;
-justify-content: center;
+justify-content: space-between;
 }
 
 .person-list {
